@@ -1,8 +1,13 @@
 @use "../varibles" as *;
+@use "../media" as *;
 
 .subscribe {
   padding-top: 80px;
   padding-bottom: 140px;
+
+  @include tablet {
+    padding: 60px 0 100px;
+  }
 
   &__title {
     font-family: $second-family;
@@ -13,6 +18,11 @@
     text-align: center;
     color: $green;
     margin-bottom: 40px;
+
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
   }
 
   &__form {

@@ -1,15 +1,18 @@
 @use "../varibles" as *;
+@use "../media" as *;
 
 .filter {
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
+    flex-wrap: wrap;
   }
 
   &__group {
     display: flex;
+    flex-wrap: wrap;
     border: 0;
     padding: 0;
     margin: 0;
@@ -17,6 +20,10 @@
 
     &_choices {
       gap: 64px;
+
+      @include mobile {
+        gap: 40px;
+      }
     }
   }
 
@@ -35,6 +42,16 @@
     background-position: center left 16px;
     background-repeat: no-repeat;
     background-size: 40px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      padding: 10px 12px 10px 40px;
+      background-position: center left 12px;
+      background-size: 24px;
+      min-height: 40px;
+    }
 
     &_flower {
       background-image: url("/img/flowers.png");
@@ -76,6 +93,12 @@
       height: 8px;
       background: url("/img/arrow.svg") no-repeat center/contain;
     }
+  }
+
+  &__price {
+  }
+
+  &__choices-box {
   }
 
   &__input-price {
