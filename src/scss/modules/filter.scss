@@ -112,6 +112,10 @@
     background-color: $white;
     padding: 24px;
     border-radius: 12px;
+
+    &_type {
+      padding: 16px;
+    }
   }
 
   &__input-price {
@@ -121,15 +125,32 @@
     height: 40px;
     background-color: $bg;
     border: none;
+
+    @include mobile {
+      width: 80px;
+    }
   }
 
   &__type-list {
   }
 
   &__type-item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__type-button {
     white-space: nowrap;
+
+    &:hover {
+      color: $light-orange;
+    }
+
+    &_active {
+      color: $orange;
+    }
   }
 }

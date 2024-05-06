@@ -19,7 +19,7 @@
   <meta name="msapplication-config" content="/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <script type="module" src="/index.js"></script>
+  <script type="module" src="/src/index.js"></script>
 </head>
 
 <body>
@@ -116,7 +116,8 @@
           <div class="filter__choices choices">
             <button class="filter__select choices__btn">Тип товара</button>
 
-            <div class="choices__box filter__choices-box">
+            <div
+              class="choices__box filter__choices-box filter__choices-box_type">
               <ul class="filter__type-list">
                 <li class="filter__type-item">
                   <button class="filter__type-button">Монобукеты</button>
@@ -318,7 +319,8 @@
 
                 <div class="cart__counter">
                   <button class="cart__counter-btn">-</button>
-                  <input class="cart__counter-input" type="number">
+                  <input class="cart__counter-input" type="number" max="99"
+                    min="0">
                   <button class="cart__counter-btn">+</button>
                 </div>
 
@@ -334,7 +336,8 @@
 
                 <div class="cart__counter">
                   <button class="cart__counter-btn">-</button>
-                  <input class="cart__counter-input" type="number">
+                  <input class="cart__counter-input" type="number" max="99"
+                    min="0">
                   <button class="cart__counter-btn">+</button>
                 </div>
 
@@ -350,7 +353,8 @@
 
                 <div class="cart__counter">
                   <button class="cart__counter-btn">-</button>
-                  <input class="cart__counter-input" type="number">
+                  <input class="cart__counter-input" type="number" max="99"
+                    min="0">
                   <button class="cart__counter-btn">+</button>
                 </div>
 
