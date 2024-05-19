@@ -13,7 +13,7 @@ const formatQueryString = (params) => {
   return `?${searchParams.toString()}`;
 };
 
-export const API_URL = "https://mirano-api.onrender.com/";
+export const API_URL = "https://mirano-api.onrender.com";
 
 export const fetchProducts = async (params = {}) => {
   try {
