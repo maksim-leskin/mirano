@@ -159,5 +159,10 @@
     padding: 9px 16px 8px 16px;
     background: $light-orange;
     color: $white;
+
+    &:disabled {
+      background-color: $light-orange;
+      opacity: 0.4;
+    }
   }
 }
