@@ -13,7 +13,7 @@ const formatQueryString = (params) => {
   return `?${searchParams.toString()}`;
 };
 
-export const API_URL = "https://mirano-api.onrender.com";
+export const API_URL = "https://dull-rose-pawpaw.glitch.me";
 
 export const fetchProducts = async (params = {}) => {
   try {
@@ -27,7 +27,7 @@ export const fetchProducts = async (params = {}) => {
 
     const products = await response.json();
 
-    productStore.setProducts(products);
+    return products;
   } catch (error) {
     console.error(`Ошибка при получении данных: ${error}`);
     return [];
