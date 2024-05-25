@@ -1,7 +1,7 @@
 import { productStore } from "./Store";
 
 const formatQueryString = (params) => {
-  if (Object.keys(params).lenght === 0) {
+  if (Object.keys(params).length === 0) {
     return "";
   }
 
